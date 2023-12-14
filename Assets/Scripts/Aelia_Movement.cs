@@ -80,6 +80,8 @@ public class Aelia_Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (GameManager1.instance.myState != GameManager1.State.playing) return;
         Vector2 v = rb.velocity;
         v.x = Input.GetAxis("Horizontal") * speed;
         rb.velocity = v;
