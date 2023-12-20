@@ -62,7 +62,7 @@ public class Aelia_Movement : MonoBehaviour
         transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, 0, Space.World);
         //transform.Translate(0, Input.GetAxis("Vertical") * speed * Time.deltaTime, 0);
         
-
+        */
 
         if (Input.GetAxis("Horizontal") * speed * Time.deltaTime > 0)
         {
@@ -73,7 +73,7 @@ public class Aelia_Movement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        */
+        
 
 
     }
